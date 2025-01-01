@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('room\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.navbar {
+    background-color: #2b3e60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-image {
+    width: 40px;
+    height: auto;
+}
+
+.navbar .logo {
+    color: #ffc107;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*media query*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-image {
+        width: 40px;
+    }
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 750;
+    padding: 5px 8px;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+a.active,a:hover {
+    background-color: #f4f4f4;
+    font-weight: 100;
+    background-color: #ffc107;
+    
+    transition: .5s;
+    box-shadow: 1px 1px 1px 1px rgba(135, 141, 152, 0.5);
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profil-container {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(86, 88, 88, 0.865)40%, rgba(101, 104, 118, 0.5) 100%);
+    transition: .5s;
+}
+
+.profil-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profil-header h1 {
+    font-size: 2rem;
+    color: #f1f4f9;
+    margin-bottom: 0.5rem;
+}
+
+.profil-header p {
+    font-size: 1rem;
+    color: #c1bfd2;
+}
+
+.profil-content h2 {
+    font-size: 1.5rem;
+    color: #ebeff5;
+    margin-bottom: 0.5rem;
+}
+
+.profil-content p {
+    margin-bottom: 1rem;
+    color: #e8ebf0;
+}
+
+.profil-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profil-content ul li {
+    margin-bottom: 0.5rem;
+    color: #e3e4ec;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1d2a47;
+    color: #fff;
+    margin-top: 2rem;
+}

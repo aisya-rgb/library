@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eceff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-container {
+            width: 100%;
+            max-width: 320px;
+            padding: 35px 20px;
+            background-image: url(room\ 3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(16, 15, 15, 0.75);
+        }
+
+        .registration-container h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 180%; 
+            margin-bottom: 10px;
+            text-align: center;
+            color: #f1eded;
+        }
+
+        .form-group {
+            margin-bottom: 0.8rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 3px;
+            font-weight: bold;
+            color: #080808;
+        }
+
+        .form-group input {
+            background: rgba(230, 213, 213, 0.3);
+            width: 93%;
+            padding: 10px;
+            backdrop-filter: brightness(80%);
+            border: 1px solid #2d2d31;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #a0a3a6;
+            outline: none;
+        }
+
+        .form-group button {
+            width: 99%;
+            padding: 10px;
+            background-color: #f9c732;
+            border: none;
+            border-radius: 7px;
+            color: #020202;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #79b3d4;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 15px;
+        }
+
+        .form-footer a {
+            color: #55baf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <div class="form-footer">
+            Already have an account? <a href="login.html">Login here</a>
+        </div>
+    </div>
+</body>
+</html>
